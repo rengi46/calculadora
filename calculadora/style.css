@@ -222,3 +222,24 @@ grid-column: 4;
 .tbtn:hover{
     width: 150px;
 }
+.historial{
+    grid-row:1/8 ;
+    grid-column: 1/5;
+    border-radius: 25px;
+    border:solid 5px black;
+    background-color: rgb(168, 93, 0);
+    text-align: center;
+    visibility:hidden ;
+    padding: 30px;
+}
+.listh{
+    list-style: none;
+    overflow: auto;
+    height: 550px;
+    width: 100%;
+    font-size: 0.7em;
+}
+
+.historialV{
+    visibility:visible;
+}

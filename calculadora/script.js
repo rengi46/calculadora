@@ -228,3 +228,13 @@ function colorChange() {
     }
     h[0].classList.remove("historialV")
  }
+
+ function history(){
+    var hist =document.getElementById("historial")
+    var arrh=historial[historial.length-1]
+    var conten
+    var li = document.createElement("li")
+    content =arrh[0] +arrh[1] + arrh[2] + "=" + arrh[3]
+    li.innerText=content;
+    hist.appendChild(li)
+}
