@@ -19,7 +19,21 @@ for (const btn of btns) {
     if(tex!="=" && tex!="C" && tex  !="±"){    //no pasan botones especiales
         btn.addEventListener("click",ponernumeros)
     }
-}function ponernumeros(even){ // pasan todos los botones no especiales
+    else if(tex=="=") {                        //pasa el igual
+        btn.addEventListener("click",operacion)
+    }
+
+}
+
+
+
+
+
+
+
+
+
+function ponernumeros(even){ // pasan todos los botones no especiales
     var guardar = result.value; //ver el numero actual
     var num = even.srcElement.firstChild.data;//cojer el numero del boton que pulsamos
     var clas=even.srcElement.classList //cojer la clase del boton que pulsamos
@@ -62,4 +76,49 @@ for (const btn of btns) {
     }
 }
 
+
+function operacion(){
+    var r
+    if(arrPrin.length>1){
+        arrPrin.push(parseFloat(result.value))  //guardamos el valor actual
+        var opg=opp.value                       // guardamos el valor anterior
+        var opPant=arrPrin[arrPrin.length-1]    //cojemos el valor que acabamos de guardar
+        opp.value=opg + opPant                  //lo imprimimos junto al anterior
+        z=0                                     // se puede volver a poner operador
+        for (i=0;i < arrPrin.length;i++){
+            if (arrPrin[i]%2!=0){//cojemos los numeros impares y vemos que funcion tenemos que hacer
+                var nu1=arrPrin[i-1]//cojemos el valor de la izquierda del operador
+                var nu2=arrPrin[i+1]//cojemos el valor de la derecha del operador
+                switch(arrPrin[i]){
+                    case "+":
+                        r=(nu1+nu2)
+                        result.value=numdspunt(r)
+                    break
+                    case "-":
+                        r=(nu1-nu2)
+                        result.value=numdspunt(r)
+                    break
+                    case "x":
+                        r=(nu1*nu2)
+                        result.value=numdspunt(r)
+                    break
+                    case "/":
+                        r=(nu1/nu2)
+                        result.value=numdspunt(r)
+                    break
+                    case "%":
+                        r=(nu1%nu2)
+                        result.value=numdspunt(r)
+                    break
+                }
+            }
+        }
+        s=1
+        arrPrin.push(numdspunt(r))
+        console.log(arrPrin)
+        historial.push(arrPrin)
+        arrPrin=[]
+        history()
+    }
+}
 
