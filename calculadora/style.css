@@ -180,3 +180,45 @@ grid-column: 4;
     border: solid 1px rgb(29, 41, 58);
     border-radius: 50px;
 }
+
+.boton{
+    cursor: pointer;
+    width: 30px;
+    height:30px ;
+    font-size: 0.7em;
+    text-align: center;
+    border-radius: 25px;
+    margin: 10px;
+    z-index: 1;
+    position: relative;
+    border: none;
+}
+.hbtn{
+    grid-row: 1;
+    grid-column: 1;
+    left: 80px;
+    background-color: rgb(211, 44, 44);
+    transition: width 0.5s;
+}
+.hbtn:hover{
+    width: 150px;
+}
+.dbtn{
+    grid-row: 1;
+    grid-column: 1;
+    left: 40px;
+    background-color: rgb(255, 219, 14);
+    transition: width 0.5s;
+}
+.dbtn:hover{
+    width: 150px;
+}
+.tbtn{
+    grid-row: 1;
+    grid-column: 1;
+    background-color: rgb(22, 236, 39);
+    transition: width 0.5s;
+}
+.tbtn:hover{
+    width: 150px;
+}
