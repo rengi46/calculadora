@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    font-size: larger;
+
+}
+
+.calculadora{
+    /* grid */
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: 40px  200px repeat(5,100px);
+    /* posicion */
+    width: 400px;
+    margin: auto;
+
+    /* decoracion */
+    background-color: rgb(255, 255, 255);
+
+    border:solid 2px black;
+    border-radius: 25px;
+}
+
+.btn{
+cursor: pointer;
+margin: 10px;
+}
+
+.bora{
+grid-row:3 ;
+grid-column: 1;
+}
+.cSigno{
+    grid-row:3 ;
+    grid-column: 2;
+}
+.rDivision{
+    grid-row:3 ;
+    grid-column: 3;
+}
+.division{
+    grid-row:3 ;
+    grid-column: 4;
+}
+.mult{
+    grid-row:4 ;
+    grid-column: 4;
+}
+.rest{
+    grid-row:5 ;
+    grid-column: 4;
+}
+.sum{
+    grid-row:6 ;
+grid-column: 4;
+}
+.igual{
+    grid-row:7 ;
+    grid-column: 4;
+    background-color: aquamarine;
+    color: white;
+    border-radius: 50px;
+    border: solid 1px aliceblue;
+}
+.igual:active{
+    box-shadow: 0px 0px 10px black;
+}
+.uno{
+    grid-row:6 ;
+    grid-column: 1;
+}
+.dos{
+    grid-row:6 ;
+    grid-column: 2;
+}
+.tres{
+    grid-row:6 ;
+    grid-column: 3;
+}
+.cuatro{
+    grid-row:5 ;
+    grid-column: 1;
+}
+.cinco{
+    grid-row:5 ;
+    grid-column: 2;
+}
+.seis{
+    grid-row:5 ;
+    grid-column: 3;
+}
+.siete{
+    grid-row:4 ;
+    grid-column: 1;
+}
+.ocho{
+    grid-row:4 ;
+    grid-column: 2;
+}
+.nueve{
+    grid-row:4 ;
+    grid-column: 3;
+}
+.cero{
+    grid-row:7 ;
+    grid-column: 1;
+}
+.punto{
+    grid-row:7 ;
+    grid-column: 2;
+}
