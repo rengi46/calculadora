@@ -174,3 +174,39 @@ function numdspunt(x){
     }
 }
 
+//cambio de modo
+function colorChange() {
+    var resul = document.getElementsByClassName("box-result")
+    var oper = document.getElementsByClassName("operador")
+    var numb = document.getElementsByClassName("numero")
+    var fond = document.getElementsByClassName("calculadora")
+    resul[0].classList.add("box-resultd");
+    resul[1].classList.add("box-resultd");
+    fond[0].classList.add("darkfond");
+
+    for(op of oper){
+        op.classList.add("darkoper");
+    }
+    for (const nu of numb) {
+        nu.classList.add("darknumero");
+    }
+    h[0].classList.remove("historialV")
+ }
+
+ function normal(){
+    var resul = document.getElementsByClassName("box-result")
+    var oper = document.getElementsByClassName("operador")
+    var numb = document.getElementsByClassName("numero")
+    var fond = document.getElementsByClassName("calculadora")
+    resul[0].classList.remove("box-resultd");
+    resul[1].classList.remove("box-resultd");
+    fond[0].classList.remove("darkfond");
+
+    for(op of oper){
+        op.classList.remove("darkoper");
+    }
+    for (const nu of numb) {
+        nu.classList.remove("darknumero");
+    }
+    h[0].classList.remove("historialV")
+ }
