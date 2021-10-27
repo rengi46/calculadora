@@ -31,6 +31,24 @@ for (const btn of btns) {
 
 }
 
+hbtn.addEventListener("click",function(){h[0].classList.add("historialV")})
+hbtn.addEventListener("mouseenter", function(){hbtn.innerHTML="Historial"})
+hbtn.addEventListener("mouseout", function(){hbtn.innerHTML="H"})
+
+dbtn.addEventListener("click",colorChange)
+dbtn.addEventListener("mouseenter", function(){dbtn.innerHTML="Dark"
+hbtn.style.left = "200px"})
+dbtn.addEventListener("mouseout", function(){dbtn.innerHTML="D"
+hbtn.style.left = "80px"})
+
+tbtn.addEventListener("click",normal)
+tbtn.addEventListener("mouseenter", function(){tbtn.innerHTML="Calculadora"
+hbtn.style.left = "200px"
+dbtn.style.left ="160px" })
+tbtn.addEventListener("mouseout", function(){tbtn.innerHTML="C"
+hbtn.style.left = "80px"
+dbtn.style.left ="40px"})
+
 
 
 
