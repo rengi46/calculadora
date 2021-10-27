@@ -148,4 +148,29 @@ function resetear(){// funcion para borrar todo
     y=0
 }
 
+function hiPunt(){ // funcion para saber si hay punto
+    var puntopunt = result.value.split("."); //Separar resultat si hi ha punt
+    var numpunt=parseInt(puntopunt[1])//guarda valor despres de coma
+    if(puntopunt.length > 1){ // si hay mas de una posicion en el array es que hay punto
+        if(numpunt>10){y=3}                     //no es pot ficar numeros
+        else if(numpunt<10 &&numpunt>0){y=2}    //podem ficar 2 num despres del punt
+        else y=1                                //hi ha un punt
+    }
+    else y=0                                    //si solo hay una posicion en el array no hay punto
+    return y
+}
+
+function numdspunt(x){
+    var str = String(x)
+    var splitresult = str.split(".")
+    if(splitresult.length > 1){
+    var newsplit = splitresult[1].split("");
+    var newstring = newsplit[0]+newsplit[1];
+    var totalstring =splitresult[0]+"."+ newstring;
+    return parseFloat(totalstring)
+    }
+    else if(splitresult.length < 2){
+        return x
+    }
+}
 
