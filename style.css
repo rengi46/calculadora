@@ -24,6 +24,23 @@
 cursor: pointer;
 margin: 10px;
 }
+.operador{
+    border-radius: 50px;
+    border: solid 1px aliceblue;
+    background-color: rgb(221, 221, 221);
+}
+.operador:active{
+    box-shadow: 0px 0px 10px;
+}
+.numero{
+    border: none;
+    background-color: white;
+}
+.numero:active{
+    background-color:rgb(221, 221, 221);
+    border: solid 1px aliceblue;
+    border-radius: 50px;
+}
 
 .result{
     grid-row: 2;
