@@ -22,6 +22,12 @@ for (const btn of btns) {
     else if(tex=="=") {                        //pasa el igual
         btn.addEventListener("click",operacion)
     }
+    else if(tex=="C"){                        //pasa el borrar
+        btn.addEventListener("click",resetear)
+    }
+    else if(tex=="±"){                        //pasa el cambiar signo
+        btn.addEventListener("click",masmenos)
+    }
 
 }
 
@@ -121,4 +127,25 @@ function operacion(){
         history()
     }
 }
+//funciones especiales
+function masmenos() {
+    var flit = parseFloat(result.value)     //el numero actual
+    var flut = Math.sign(flit)              //per saber si es negatiu o no "torna 1 si es positu"
+    if(flut == 1){                          // torna -1 si es negatiu
+        result.value = -Math.abs(flit)      //el valor es positu
+    }
+    else if (flut == -1){                    //el valor es negatiu
+        result.value = Math.abs(flit)
+    }
+
+}
+
+function resetear(){// funcion para borrar todo
+    result.value = 0;
+    opp.value = "";
+    arrPrin=[]
+    z=0
+    y=0
+}
+
 
