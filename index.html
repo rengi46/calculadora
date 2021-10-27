@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Script.js" defer></script>
+</head>
+<body>
+    <div class="calculadora">
+                <span class="slider round"onclick="colorChang()"></span>
+
+                <button id="hbtn" class="hbtn boton">H</button>
+        <button id="dbtn" class="dbtn boton">D</button>
+        <button id="tbtn" class="tbtn boton">C</button>
+        <div class="result">
+            <input readonly maxlength="10" type="text" id="operacion" class="box-result box-result2"></input>
+            <input  readonly type="text" id="result" class="box-result box-result1"></div>
+        </input>
+        <button id="borrar" class="btn operador borra">C</button>
+        <button id="cSigno" class="btn operador cSigno">±</button>
+        <button id="rDivision" class="btn operador rDivision">%</button>
+        <button id="division" class="btn operador division">/</button>
+        <button id="mult" class="btn operador mult">x</button>
+        <button id="rest" class="btn operador rest">-</button>
+        <button id="sum" class="btn operador sum">+</button>
+        <button id="igual" class="btn  igual">=</button>
+        <button id="uno" class="btn numero uno">1</button>
+        <button id="dos" class="btn numero dos">2</button>
+        <button id="tres" class="btn numero tres">3</button>
+        <button id="cuatro" class="btn numero cuatro">4</button>
+        <button id="cinco" class="btn numero cinco">5</button>
+        <button id="seis" class="btn numero seis">6</button>
+        <button id="siete" class="btn numero siete">7</button>
+        <button id="ocho" class="btn numero ocho">8</button>
+        <button id="nueve" class="btn numero nueve">9</button>
+        <button id="cero" class="btn numero cero">0</button>
+        <button id="punto" class="btn numero punto">.</button>
+        <div class="historial" > <h1>History</h1>
+            <ul id="historial" class="listh">
+                
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
