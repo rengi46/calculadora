@@ -198,7 +198,7 @@ grid-column: 4;
     grid-column: 1;
     left: 80px;
     background-color: rgb(211, 44, 44);
-    transition: width 0.5s;
+    transition: width 1s;
 }
 .hbtn:hover{
     width: 150px;
@@ -208,7 +208,7 @@ grid-column: 4;
     grid-column: 1;
     left: 40px;
     background-color: rgb(255, 219, 14);
-    transition: width 0.5s;
+    transition: width 1s;
 }
 .dbtn:hover{
     width: 150px;
@@ -217,7 +217,7 @@ grid-column: 4;
     grid-row: 1;
     grid-column: 1;
     background-color: rgb(22, 236, 39);
-    transition: width 0.5s;
+    transition: width 1s;
 }
 .tbtn:hover{
     width: 150px;
